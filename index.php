@@ -36,38 +36,40 @@
 <header>  
 
 <div class="container">
-    <div class="logo">
-        <a href="index.php"><img src="images/logo.png" alt="" /></a>
-    </div>
-    <nav>
-        <!-- Menu Toggle btn-->
-        <div class="menu-toggle">
-            <h3>Menu</h3>
-            <button type="button" id="menu-btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    <div class="inner_container">
+        <div class="logo">
+            <a href="./"><img src="images/logo.png" alt="" /></a>
         </div>
-        <!-- Responsive Menu Structure-->
-        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
-        <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-            <li>
-                <a>
-                    <span class="title">About</span>
-                    <span class="arrow"></span> 
-                </a>
-                <ul>
-                    <li><a href="#">Lorem Ipsum 1</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="title">Lorem Ipsum 2</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <!-- Menu Toggle btn-->
+            <div class="menu-toggle">
+                <h3>Menu</h3>
+                <button type="button" id="menu-btn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Responsive Menu Structure-->
+            <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                <li>
+                    <a>
+                        <span class="title">About</span>
+                        <span class="arrow"></span> 
+                    </a>
+                    <ul>
+                        <li><a href="#">Lorem Ipsum 1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Lorem Ipsum 2</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </div>
 </header>
 <!-- End of Responsive Menu -->
@@ -78,7 +80,7 @@
 <div class="banner">
     <div class="main_banner owl-carousel owl-theme">    
         <div class="item_box">
-            <img src="images/banners/banner-1.jpg" alt="Kompress India" title="Kompress India">
+            <img src="images/banners/banner-1.jpg" alt="" title="">
         </div>
     </div>
 </div>
