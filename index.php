@@ -18,10 +18,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- slider -->
-<link href="plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-<link href="plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+<!-- <link href="plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+<link href="plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet"> -->
 
-<link href="plugins/venobox/venobox.min.css" rel="stylesheet" type="text/css" media="screen" />
+<!-- Swiper Slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+<!-- <link href="plugins/venobox/venobox.min.css" rel="stylesheet" type="text/css" media="screen" /> -->
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/responsive.css" rel="stylesheet" type="text/css" />
@@ -123,7 +126,7 @@ $(document).ready(function () {
 });
 </script>
 
-<script src="plugins/venobox/venobox.min.js"></script>
+<!-- <script src="plugins/venobox/venobox.min.js"></script>
 <script>
 $(document).ready(function(){
     new VenoBox({
@@ -135,15 +138,74 @@ $(document).ready(function(){
     });
 });
 </script>
-
+ -->
 <script src="js/wow.min.js"></script>
 <script>
 new WOW().init();
 </script>
 
 <!--slider-->
-<script src="plugins/owl-carousel/owl.carousel.js"></script>
-<script src="plugins/owl-carousel/owl-content-animation.js"></script>
+<!-- <script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/owl-carousel/owl-content-animation.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+     autoplay: {
+       delay: 5000,
+     },
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    // pagination: {
+    //     el: '.swiper-pagination',
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    // },
+
+    // on: {
+    //     slideChangeTransitionEnd: function () {
+    //         animateSlide(this.activeIndex);
+    //     }
+    // }
+    
+    // This is for ANIMATION
+      // on: {
+      //   slideChangeTransitionStart: function () {
+      //     resetAnimations();
+      //   },
+      //   slideChangeTransitionEnd: function () {
+      //     animateActiveSlide();
+      //   }
+      // }
+});
+
+    // This is for ANIMATION
+// function resetAnimations() {
+//     document.querySelectorAll('.banner_overlay_box').forEach(el => {
+//         el.classList.remove('animate');
+//     });
+// }
+
+    // This is for ANIMATION
+// function animateActiveSlide() {
+//     const activeSlide = document.querySelector('.swiper-slide-active .banner_overlay_box');
+//     if (activeSlide) {
+//         activeSlide.classList.add('animate');
+//     }
+// }
+</script>
 
 </body>
 </html>
