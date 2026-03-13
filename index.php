@@ -14,12 +14,8 @@
 <link href="css/animate.4.1.1.css" rel="stylesheet" type="text/css" />
 
 <!---fonts-->
-<link href="css/fontawesome.7.0.1.min.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/fontawesome.7.0.1.min.css" rel="stylesheet" type="text/css" /> -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- slider -->
-<!-- <link href="plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-<link href="plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet"> -->
 
 <!-- Swiper Slider -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -36,56 +32,76 @@
 
 <body>
 
-<header>  
+<header>
+    <div class="container">
+        <div class="inner_container">
 
-<div class="container">
-    <div class="inner_container">
-        <div class="logo">
-            <a href="./"><img src="images/logo.png" alt="" /></a>
-        </div>
-        <nav>
-            <!-- Menu Toggle btn-->
-            <div class="menu-toggle">
-                <h3>Menu</h3>
-                <button type="button" id="menu-btn">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="logo">
+                <a href="./"><img src="images/logo.png" alt="" /></a>
             </div>
-            <!-- Responsive Menu Structure-->
-            <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
-            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-                <li>
-                    <a>
-                        <span class="title">About</span>
-                        <span class="arrow"></span> 
-                    </a>
-                    <ul>
-                        <li><a href="#">Lorem Ipsum 1</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="title">Lorem Ipsum 2</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <!-- Menu Toggle btn-->
+                <div class="menu-toggle">
+                    <button type="button" id="menu-btn">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Responsive Menu Structure-->
+                <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                    <li>
+                        <a>
+                            <span class="title">About</span>
+                            <span class="arrow"></span> 
+                        </a>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum 1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">Lorem Ipsum 2</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </div>
-</div>
 </header>
 <!-- End of Responsive Menu -->
 
 
 <div id="main">
   
-<div class="banner">
+<!-- <div class="banner">
     <div class="main_banner owl-carousel owl-theme">    
         <div class="item_box">
             <img src="images/banners/banner-1.jpg" alt="" title="">
         </div>
     </div>
+</div> -->
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
 
 </div>
@@ -111,8 +127,8 @@ window.addEventListener('scroll', function(e){
 }
 window.onload = init();
 </script> -->
-<script src="js/common.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
+<!-- <script src="js/common.js"></script> -->
+<!-- <script src="js/jquery.easing.1.3.js"></script> -->
 
 
 <script src="js/ace-responsive-menu.js"></script>
@@ -139,14 +155,11 @@ $(document).ready(function(){
 });
 </script>
  -->
-<script src="js/wow.min.js"></script>
+
+<!-- <script src="js/wow.min.js"></script>
 <script>
 new WOW().init();
-</script>
-
-<!--slider-->
-<!-- <script src="plugins/owl-carousel/owl.carousel.js"></script>
-<script src="plugins/owl-carousel/owl-content-animation.js"></script> -->
+</script> -->
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script>
@@ -173,12 +186,6 @@ const swiper = new Swiper('.swiper', {
     // scrollbar: {
     //     el: '.swiper-scrollbar',
     // },
-
-    // on: {
-    //     slideChangeTransitionEnd: function () {
-    //         animateSlide(this.activeIndex);
-    //     }
-    // }
     
     // This is for ANIMATION
       // on: {
