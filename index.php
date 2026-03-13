@@ -14,7 +14,7 @@
 <link href="css/animate.4.1.1.css" rel="stylesheet" type="text/css" />
 
 <!---fonts-->
-<!-- <link href="css/fontawesome.7.0.1.min.css" rel="stylesheet" type="text/css" /> -->
+<link href="css/fontawesome.7.0.1.min.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- Swiper Slider -->
@@ -75,14 +75,6 @@
 
 
 <div id="main">
-  
-<!-- <div class="banner">
-    <div class="main_banner owl-carousel owl-theme">    
-        <div class="item_box">
-            <img src="images/banners/banner-1.jpg" alt="" title="">
-        </div>
-    </div>
-</div> -->
 
 <!-- Slider main container -->
 <div class="swiper">
